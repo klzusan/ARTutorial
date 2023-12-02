@@ -8,14 +8,12 @@
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
     <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
-    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
 </head>
 
 <body style="margin: 0; overflow: hidden;">
     <a-scene vr-mode-ui="enabled: false" arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false" renderer="antialias: true; alpha: true">
-        <a-camera gps-camera rotation-reader alert="true"></a-camera>
-        <a-box material="color: yellow" geometry="primitive: box" gps-entity-place="latitude: 34.71285; longitude: 135.74095" scale="2 2 2"></a-box>
-        <a-text value="こんにちは" font="custom-msdf.json" font-image="custom.png" negate="false" scale="5 5 5" gps-entity-place="latitude: 34.71285; longitude: 135.74095"></a-text>
+        <a-camera gps-new-camera></a-camera>
+        <a-entity material="color: red" geometry="primitive: box" gps-new-entity-place="latitude: 34.71286; longitude: 135.74095" scale="5 5 5"></a-entity>
     </a-scene>
 </body>
 
