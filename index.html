@@ -13,7 +13,7 @@
 
 <body style="margin: 0; overflow: hidden;">
     <a-scene vr-mode-ui="enabled: false" arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false" renderer="antialias: true; alpha: true">
-        <a-camera gps-new-camera></a-camera>
+        <a-camera gps-camera rotation-reader alert="true"></a-camera>
         <a-box material="color: yellow" geometry="primitive: box" gps-new-entity-place="latitude: 34.71285; longitude: 135.74095" scale="2 2 2"></a-box>
         <a-text value="こんにちは" font="custom-msdf.json" font-image="custom.png" negate="false" scale="2 2 1" gps-entity-place="latitude: 34.712995; longitude: 135.741170"></a-text>
     </a-scene>
