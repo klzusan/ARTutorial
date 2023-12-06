@@ -11,19 +11,14 @@
 </head>
 
 <body style="margin: 0; overflow: hidden;">
-    <script>console.log("Hello.");</script>
     <a-scene vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false;">
-        <script>console.log("Reading a-scene.");</script>
         <a-camera gps-camera rotation-reader></a-camera>
-        <script>console.log("Camera Ready.");</script>
         <a-assets>
             <a-asset-item id="human"
                 src="human.glb"></a-asset-item>
         </a-assets>
-        <script>console.log("Assets Ready.");</script>
         <a-entity gltf-model="#human" modify-materials
          gps-entity-place="latitude: 34.712992; longitude: 135.741169"></a-entity>
-         <script>console.log("All Ready.");</script>
     </a-scene>
 </body>
 
