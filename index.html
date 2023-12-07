@@ -13,7 +13,7 @@
 
 <body style="margin: 0; overflow: hidden;">
     <a-scene xr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false;" renderer="logarithmicDepthBuffer: true;">
-        <a-camera gps-camera rotation-reader></a-camera>
+        <a-camera gps-new-camera rotation-reader></a-camera>
         <a-assets>
             <a-asset-item id="human"
                 src="static/assets/human.glb"></a-asset-item>
@@ -21,11 +21,11 @@
                 src="static/assets/aqua1.glb"></a-asset-item>
         </a-assets>
         <a-entity gltf-model="#human" modify-materials scale="0.7 0.7 0.7"
-         gps-entity-place="latitude: 34.712957; longitude: 135.740520"></a-entity>
+         gps-new-entity-place="latitude: 34.712957; longitude: 135.740520"></a-entity>
         <a-entity gltf-model="#aqua1" modify-materials look-at="[gps-camera]" scale="0.5 0.5 0.5"
-         gps-entity-place="latitude: 34.712591; longitude: 135.740675"></a-entity>
+         gps-new-entity-place="latitude: 34.712591; longitude: 135.740675"></a-entity>
         <a-entity gltf-model="#aqua1" modify-materials look-at="[gps-camera]" scale="0.5 0.5 0.5"
-         gps-entity-place="latitude: 35.049773; longitude: 135.782621"></a-entity>
+         gps-new-entity-place="latitude: 35.049773; longitude: 135.782621"></a-entity>
     </a-scene>
 </body>
 
