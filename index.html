@@ -17,9 +17,13 @@
         <a-assets>
             <a-asset-item id="aqua1"
                 src="static/assets/aqua1.glb"></a-asset-item>
+            <a-asset-item id="tree"
+                src="static/assets/ChristmasTree.glb"></a-asset-item>
         </a-assets>
+        <a-entity gltf-model="#tree" modify-materials look-at="[gps-new-camera]" scale="0.2 0.2 0.2" position="0 0 0"
+         gps-new-entity-place="latitude: 34.71285; longitude: 135.74095"></a-entity>
         <a-entity gltf-model="#aqua1" modify-materials look-at="[gps-new-camera]" scale="0.2 0.2 0.2" position="0 -10 0"
-         gps-new-entity-place="latitude: 34.71287; longitude: 135.74097"></a-entity>
+         gps-new-entity-place="latitude: 34.71264; longitude: 135.74063"></a-entity>
         <a-entity gltf-model="#aqua1" modify-materials look-at="[gps-new-camera]" scale="0.2 0.2 0.2" position="0 -10 0"
          gps-new-entity-place="latitude: 35.04882; longitude: 135.78025"></a-entity>
     </a-scene>
